@@ -66,8 +66,20 @@ section {
 
 /* hero banner */
 
-#pageHero {
+.hero-page-one {
   background-image: url("./images/Elmo.jpg");
+}
+
+.hero-page-two {
+  background-image: url("./images/Elmo.jpg");
+}
+
+.hero-page-three {
+  background-image: url("./images/hirsthals.jpg");
+}
+
+
+#pageHero {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

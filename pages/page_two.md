@@ -1,4 +1,4 @@
-# Page two
+# Cons
 
 ## This is the headline of your second page
 

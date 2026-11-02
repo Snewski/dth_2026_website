@@ -4,6 +4,19 @@ const articles = Array.from(document.getElementsByClassName("carouselArt"));
 const btnLeft = document.getElementById("carouselBtnLeft");
 const btnRight = document.getElementById("carouselBtnRight");
 
+// Change banner for each page
+const page = new URLSearchParams(window.location.search).get("page");
+const hero = document.getElementById("pageHero");
+
+if (page === "page_one") {
+  hero.classList.add("hero-page-one");
+} else if (page === "page_two") {
+  hero.classList.add("hero-page-two");
+} else if (page === "page_three") {
+  hero.classList.add("hero-page-three");
+}
+
+
 let artInFocus;
 
 articles.forEach((art) => {
@@ -77,3 +90,22 @@ if (btnLeft && btnRight) {
   btnLeft.addEventListener("click", (e) => moveCarousel(e, "prev"));
   btnRight.addEventListener("click", (e) => moveCarousel(e, "next"));
 }
+
+// Allows for Sound to be played on the 2nd page
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const page = params.get("page");
+
+  const music = document.getElementById("bgMusic");
+
+  if (page === "page_two") {
+    music.play().catch(() => {
+      console.log("Autoplay was blocked by the browser.");
+    });
+  } else {
+    music.pause();
+    music.currentTime = 0;
+  }
+});
+
+
