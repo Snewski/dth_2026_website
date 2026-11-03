@@ -7,7 +7,7 @@ const btnRight = document.getElementById("carouselBtnRight");
 // Change banner for each page
 const page = new URLSearchParams(window.location.search).get("page");
 const hero = document.getElementById("pageHero");
-
+// page === null is basically the front page, which is equivalent to page one
 if (page === null || page === "page_one") {
   hero.classList.add("hero-page-one");
 } else if (page === "page_two") {

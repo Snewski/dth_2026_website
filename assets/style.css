@@ -78,6 +78,17 @@ section {
   background-image: url("./images/hirsthals.jpg");
 }
 
+.hero-page-one h1 {
+  color: white;
+}
+
+.hero-page-two h1 {
+  color: yellow;
+}
+
+.hero-page-three h1 {
+  color: cyan;
+}
 
 #pageHero {
   background-size: cover;
@@ -87,7 +98,8 @@ section {
 }
 
 #bannerShadow {
-  background-color: rgba(160, 213, 240, 0.447);
+  background: transparent;
+  box-shadow: none;
   height: 100%;
 }
 
