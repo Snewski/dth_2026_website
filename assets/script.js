@@ -8,7 +8,7 @@ const btnRight = document.getElementById("carouselBtnRight");
 const page = new URLSearchParams(window.location.search).get("page");
 const hero = document.getElementById("pageHero");
 
-if (page === "page_one") {
+if (page === null || page === "page_one") {
   hero.classList.add("hero-page-one");
 } else if (page === "page_two") {
   hero.classList.add("hero-page-two");
