@@ -29,13 +29,25 @@ fetch(file)
       heading.remove();
     }
 
-    charCount.textContent = countCharacters(content.textContent) + " characters";
+    charCount.textContent = countCharacters(markdown) + " characters";
   })
   .catch((error) => {
     content.textContent = "Could not load " + file + ": " + error.message;
   });
 
 // Counts the characters a reader sees, including spaces, but not the markdown symbols.
-function countCharacters(text) {
-  return text.replace(/\s+/g, " ").trim().length;
+function countCharacters(markdown) {
+  let text = markdown;
+
+  // Remove the first-level heading (# Title)
+  text = text.replace(/^# .*\n*/m, "");
+
+  // Remove References section and everything after it
+  text = text.split(/^##\s+References\s*$/im)[0];
+
+  // Collapse whitespace and count visible characters
+  return text
+    .replace(/^#+\s+/gm, "")
+    .trim()
+    .length;
 }
