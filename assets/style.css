@@ -209,9 +209,10 @@ footer {
 /* markdown content */
 
 /* markdown cannot add classes, so the first paragraph after a headline gets the light style this way */
-main h2 + p {
+
+/* main h2 + p {
   font-weight: 200;
-}
+}/*
 
 /* the resets at the top remove link colours and bullets everywhere, so we give them back inside main */
 main a {
