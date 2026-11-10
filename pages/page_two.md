@@ -12,7 +12,7 @@ As with the pros, here I have limited the cons of open-source to 5, which are th
 
 Some open-source tools are developed primarily by researchers or volunteers rather than professional technical writers. As a result, the documentation may be incomplete, outdated, lack good examples, or assume prior technical knowledge. This can make learning and using the tool more difficult for new users [1]. To avoid hanging someone else out, here are two examples of varying documentation from my own work [2,3].
 
-Unlike commercial software, dedicated customer support usually does not exist, so users often have to rely on forums or community help. On the other hand, it seems like AI has alleviated the amount of time twiddling your thumbs waiting for community responses, since activity on Stack Overflow has nosedived [4] 
+Unlike commercial software, dedicated customer support usually does not exist, so users often have to rely on forums or community help. On the other hand, it seems like AI has alleviated the amount of time twiddling your thumbs waiting for community responses, since activity on Stack Overflow has nosedived [4].
 
 Compatibility can be a challenge for open-source software when new operating systems or hardware architectures emerge. For example, the scientific Python library “SciPy” was not initially available as an official native package for Windows ARM64 devices [5]. So users had to rely on experimental builds or compile the software themselves, until a solution came around.
 

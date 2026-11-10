@@ -16,12 +16,11 @@ If I imagine someone maintaining a popular Python library, open-source becomes a
 
 Lastly, when it comes to security, as we have seen with the PHP2Shell [3,4] case, open-source means a lot of eyes, and now also AI, can review code for vulnerabilities. This of course means security flaws may be identified and fixed more rapidly.
 
-
 ## References 
 
 [1] https://docs.python.org/3/ 
 
-[2] Peirce, J. W., Gray, J. R., Simpson, S., MacAskill, M. R., Höchenberger, R., Sogo, H., Kastman, E., Lindeløv, J. (2019). PsychoPy2: experiments in behavior made easy. Behavior Research Methods. 10.3758/s13428-018-01193-y
+[2] https://pubmed.ncbi.nlm.nih.gov/30734206/
 
 [3] https://www.nbcnews.com/tech/security/critical-vulnerabilities-php-update-systems-rcna604751 
 
