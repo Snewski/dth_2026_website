@@ -254,3 +254,9 @@ main img {
 }
 
 #page_two h2 { color: var(--red); }
+
+
+#totalCount {
+  align-self: center;
+  margin: 0;
+}
